@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sağlıklı Yaşam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="sidebar">
+            <a href="index.html">
+                <h2>🌱 Sağlıklı Yaşam 🌱</h2>
+            </a>
+            <ul>
+                <li><a href="vki.html">📏 VÜCUT KİTLE İNDEKSİ (BMI)</a></li>
+                <li><a href="metabolizma.html">⚖️ BAZAL METABOLİZMA HIZI (BMR)</a></li>
+                <li><a href="idealkilo.html">💭 İDEAL KİLO</a></li>
+                <li><a href="kaloriihtiyaci.html">🍽️ GÜNLÜK KALORİ İHTİYACI</a></li>
+                <li><a href="suihtiyaci.html">🚰 GÜNLÜK SU İHTİYACI</a></li>
+                <li><a href="maxkalphizi.html">❤️ MAKSİMUM KALP HIZI</a></li>
+                <li><a href="rm.html">🏋️ 1RM HESAPLAMA</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>💭İdeal Kilo Hesaplayıcı</h1>
+            <div class="info">
+                <p>🔍 İdeal kilonuzu etkileyen birden fazla faktör vardır. Yaş, cinsiyet, kas kütlesi, genetik, etnik
+                    köken ve fiziksel aktivite seviyeleri bu faktörlerden yalnızca birkaçını oluşturur. Birçoğumuz bu
+                    sihirli rakamı tartıda ararken gerçek ideal bir ağırlığın olmadığı yönünde. Aşağıdaki hesaplama
+                    aracından ideal kilo oranınızı hesaplayabilirsiniz.</p>
+            </div> <br>
+
+
+            <form id="idealWeightForm">
+                <label for="gender">Cinsiyetiniz:</label>
+                <select id="gender" required>
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                </select><br>
+
+                <label for="height">Boyunuz (cm):</label>
+                <input type="number" id="height" min="1" step="0.01" required><br>
+
+                <label for="currentWeight">Mevcut Kilonuz (kg):</label>
+                <input type="number" id="currentWeight" min="1" step="0.01" required><br>
+
+                <button type="button" onclick="calculateIdealWeight()">Hesapla</button>
+            </form>
+            <div id="result"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

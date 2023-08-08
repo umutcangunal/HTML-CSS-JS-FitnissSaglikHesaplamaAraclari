@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sağlıklı Yaşam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="sidebar">
+            <a href="index.html">
+                <h2>🌱 Sağlıklı Yaşam 🌱</h2>
+            </a>
+            <ul>
+                <li><a href="vki.html">📏 VÜCUT KİTLE İNDEKSİ (BMI)</a></li>
+                <li><a href="metabolizma.html">⚖️ BAZAL METABOLİZMA HIZI (BMR)</a></li>
+                <li><a href="idealkilo.html">💭 İDEAL KİLO</a></li>
+                <li><a href="kaloriihtiyaci.html">🍽️ GÜNLÜK KALORİ İHTİYACI</a></li>
+                <li><a href="suihtiyaci.html">🚰 GÜNLÜK SU İHTİYACI</a></li>
+                <li><a href="maxkalphizi.html">❤️ MAKSİMUM KALP HIZI</a></li>
+                <li><a href="rm.html">🏋️ 1RM HESAPLAMA</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1> ❤️Maksimum Kalp Hızı Hesaplayıcı</h1>
+
+            <div class="info">
+                <p>🔍 Maksimum kalp hızı, bir bireyin kalbinin en yüksek hızda atabileceği maksimum nabızdır. Bu değer
+                    yaş, cinsiyet ve başka diğer parametrelere göre değişebilir. Aşağıdaki hesaplama aracını kullanarak
+                    maksimum kalp hızınızı hemen hesaplayabilirsiniz.</p> <br>
+            </div>
+
+            <form id="heartRateCalculatorForm">
+                <label for="age">Yaşınız:</label>
+                <input type="number" id="age" min="1" required><br>
+
+                <button type="button" onclick="calculateMaxHeartRate()">Hesapla</button>
+            </form>
+            <div id="result"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
